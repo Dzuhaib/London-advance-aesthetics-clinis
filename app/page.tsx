@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { ArrowRight, CalendarBlank, CaretLeft, CaretRight, Check, ShieldCheck, Sparkle, UserCircle } from '@phosphor-icons/react'
-import { CTA, Footer, FinalCTA, Header } from './components/Chrome'
+import { CTA, Footer, FinalCTA, Header, SocialRail } from './components/Chrome'
 import { menuGroups, photos, treatments } from './data'
 
 const PER_VIEW = 5
@@ -20,7 +20,7 @@ function AlsoStrip() {
 }
 
 export default function Page() {
-  return <><Header /><main>
+  return <><Header /><SocialRail /><main>
     <section id="home" className="hero"><div className="hero-copy"><p className="eyebrow">Advanced aesthetics · London</p><h1>Refined aesthetics.<br /><em>Naturally you.</em></h1><p className="hero-text">Advanced aesthetic treatments designed to enhance your natural features, restore confidence and deliver beautifully considered results.</p><div className="hero-actions"><CTA><CalendarBlank size={15} />Book a Consultation</CTA><a href="#treatments" className="text-link">Explore treatments <ArrowRight size={15} /></a></div></div><div className="hero-visual"><Image src={photos.hero} alt="Woman with natural, glowing skin" fill priority sizes="(max-width: 900px) 100vw, 52vw" /><span className="image-note">Quiet care · considered results</span></div></section>
     <section className="trust-strip"><div>Advanced treatments</div><div>Personalised care</div><div>Natural-looking results</div><div>Private London clinic</div></section>
     <section id="about" className="editorial about"><div className="editorial-image tall"><Image src={photos.philosophy} alt="A calm skincare consultation" fill sizes="(max-width: 900px) 100vw, 48vw" /></div><div className="editorial-copy"><p className="eyebrow">01 · Personalise</p><h2>A more considered approach to aesthetics</h2><p>Every face has its own character. Our consultations are unhurried, our recommendations are thoughtful, and every treatment plan is shaped around you.</p><p>With clinical expertise and a light touch, we focus on natural-looking results that leave you feeling comfortable, confident and still entirely yourself.</p><a href="#contact" className="text-link">Meet the clinic <ArrowRight size={15} /></a></div></section>

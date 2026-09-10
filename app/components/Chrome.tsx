@@ -5,7 +5,7 @@ import { ArrowRight, CalendarBlank, Envelope, InstagramLogo, List, MapPin, Phone
 
 // Links are root-relative so the same header works from the homepage and /treatments.
 // #contact stays relative because every page renders <FinalCTA /> with that id.
-const links = [['Home', '/#home'], ['Treatments', '/treatments'], ['Results', '/#results'], ['About', '/#about'], ['Contact', '#contact']]
+const links = [['Home', '/#home'], ['Treatments', '/treatments'], ['Results', '/#results'], ['About', '/#about'], ['Terms', '/terms'], ['Contact', '#contact']]
 
 // Canonical profile URLs. The share links these came from carried throwaway tracking
 // params (TikTok _r/_t session tokens, Instagram utm_source=qr) — stripped deliberately.
@@ -36,5 +36,5 @@ export function FinalCTA() {
 }
 
 export function Footer() {
-  return <footer className="footer"><div className="footer-grid"><div><Logo /><p>Refined aesthetic care, thoughtfully tailored in London.</p></div><div><p className="footer-label">Explore</p><a href="/treatments">Treatments</a><a href="/#results">Results</a><a href="/#about">About</a></div><div><p className="footer-label">Connect</p><p><Envelope size={15} /> hello@londonadvancedaesthetics.co.uk</p><p><Phone size={15} /> Contact details to be supplied</p><p><MapPin size={15} /> London, United Kingdom</p></div><div><p className="footer-label">Follow</p>{socials.map(({ name, href, Icon }) => <a className="footer-social" key={name} href={href} target="_blank" rel="noopener noreferrer"><Icon size={16} />{name}</a>)}</div></div><div className="footer-bottom"><span>© 2026 London Advanced Aesthetic Clinic</span><span>Privacy · Terms · Cookies</span></div></footer>
+  return <footer className="footer"><div className="footer-grid"><div><Logo /><p>Refined aesthetic care, thoughtfully tailored in London.</p></div><div><p className="footer-label">Explore</p><a href="/treatments">Treatments</a><a href="/#results">Results</a><a href="/#about">About</a></div><div><p className="footer-label">Connect</p><p><Envelope size={15} /> hello@londonadvancedaesthetics.co.uk</p><p><Phone size={15} /> Contact details to be supplied</p><p><MapPin size={15} /> London, United Kingdom</p></div><div><p className="footer-label">Follow</p>{socials.map(({ name, href, Icon }) => <a className="footer-social" key={name} href={href} target="_blank" rel="noopener noreferrer"><Icon size={16} />{name}</a>)}</div></div><div className="footer-bottom"><span>© 2026 London Advanced Aesthetic Clinic</span><span>Privacy · <a href="/terms">Terms</a> · Cookies</span></div></footer>
 }

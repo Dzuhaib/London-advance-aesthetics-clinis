@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 import { ArrowRight, CalendarBlank, Envelope, InstagramLogo, List, MapPin, Phone, TiktokLogo, X } from '@phosphor-icons/react'
 
@@ -18,7 +19,7 @@ export function CTA({ children, href = '#contact' }: { children: React.ReactNode
   return <a href={href} className="cta">{children}</a>
 }
 
-export function Logo() { return <a href="/#home" className="logo" aria-label="London Advanced Aesthetic Clinic"><span className="logo-mark">LA</span><span>London Advanced<br />Aesthetic Clinic</span></a> }
+export function Logo() { return <a href="/#home" className="logo" aria-label="London Advanced Aesthetic Clinic"><div className="logo-mark"><Image src="/Logo.webp" alt="London Advanced Aesthetic Clinic" fill sizes="(max-width: 700px) 48px, 76px" /></div><span>London Advanced<br />Aesthetic Clinic</span></a> }
 
 // Fixed rail on the left viewport edge. Hidden below 700px, where a 42px rail would sit
 // over the content; the footer "Follow" column covers mobile.

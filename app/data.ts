@@ -7,8 +7,6 @@ export const photos = {
   clinic: 'https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&w=1600&q=88',
   treatments: 'https://images.unsplash.com/photo-1761718209694-70031ee64f82?auto=format&fit=crop&w=1000&q=88',
   placeholder: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=900&q=85',
-  before: '/before.png',
-  after: '/after.png',
 }
 
 /** A treatment with its own photo, shown as a card on the homepage carousel and /treatments. */

@@ -4,6 +4,6 @@
 // normal use and on Vercel, where it falls back to .next.
 const nextConfig = {
   distDir: process.env.NEXT_DIST_DIR || '.next',
-  images: { remotePatterns: [{ protocol: 'https', hostname: 'images.unsplash.com' }] },
+  images: { remotePatterns: [{ protocol: 'https', hostname: 'images.unsplash.com' }], localPatterns: [{ pathname: '/before.png' }, { pathname: '/after.png' }], },
 }
 export default nextConfig

@@ -18,7 +18,7 @@ export function CTA({ children, href = '#contact' }: { children: React.ReactNode
   return <a href={href} className="cta">{children}</a>
 }
 
-export function Logo() { return <a href="/#home" className="logo" aria-label="London Advanced Aesthetic Clinic"><div className="logo-mark"><img src="/logo.png" alt="London Advanced Aesthetic Clinic" width={150} height={73} /></div></a> }
+export function Logo() { return <a href="/#home" className="logo" aria-label="London Advanced Aesthetic Clinic"><div className="logo-mark"><img src="/Logo.png" alt="London Advanced Aesthetic Clinic" width={150} height={73} /></div></a> }
 
 // Fixed rail on the left viewport edge. Hidden below 700px, where a 42px rail would sit
 // over the content; the footer "Follow" column covers mobile.

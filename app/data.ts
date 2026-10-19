@@ -9,6 +9,12 @@ export const photos = {
   placeholder: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=900&q=85',
 }
 
+export const googleReviews = {
+  rating: '5.0',
+  label: 'Google Reviews',
+  href: 'https://www.google.com/search?q=London+Advanced+Aesthetic+Clinic+London+reviews',
+}
+
 /** A treatment with its own photo, shown as a card on the homepage carousel and /treatments. */
 export type Treatment = {
   slug: string

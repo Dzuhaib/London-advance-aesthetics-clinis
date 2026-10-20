@@ -148,6 +148,182 @@ export type MenuGroup = {
   items: { name: string; benefit: string }[]
 }
 
+/** A category in a header mega menu, with the items it contains. */
+export type MegaMenuCategory = {
+  name: string
+  intro: string
+  items: { name: string; href: string }[]
+}
+
+export const treatmentMenu: MegaMenuCategory[] = [
+  {
+    name: 'Face Treatments',
+    intro: 'Precision-led treatments for tone, volume and skin quality.',
+    items: [
+      { name: 'Anti-Wrinkle Treatments', href: '/treatments#anti-wrinkle' },
+      { name: 'Dermal Fillers', href: '/treatments#dermal-fillers' },
+      { name: 'Profhilo', href: '/treatments#profhilo' },
+      { name: 'Polynucleotides', href: '/treatments#polynucleotides' },
+      { name: 'Skin Boosters', href: '/treatments#skin-boosters' },
+      { name: 'Lumi Eyes', href: '/treatments#lumi-eyes' },
+      { name: 'Face PRP', href: '/treatments#face-prp' },
+      { name: 'Microneedling', href: '/treatments#microneedling' },
+      { name: 'Skin Rejuvenation', href: '/treatments#skin-rejuvenation' },
+      { name: 'Exosomes Therapy', href: '/treatments#exosomes-therapy' },
+    ],
+  },
+  {
+    name: 'Hair Loss Treatments',
+    intro: 'Regenerative care for thinning hair and a healthier scalp.',
+    items: [
+      { name: 'Hair PRP', href: '/treatments#hair-prp' },
+      { name: 'Exosomes Therapy for Hair', href: '/treatments#exosomes-therapy' },
+      { name: 'Scalp Microneedling', href: '/treatments#contact' },
+      { name: 'Hair Loss Consultation', href: '/treatments#contact' },
+    ],
+  },
+  {
+    name: 'Body Treatments',
+    intro: 'Targeted treatments for contour, skin and unwanted hair.',
+    items: [
+      { name: 'Fat Dissolving Injections', href: '/treatments#fat-dissolving-injections' },
+      { name: 'Laser Hair Removal', href: '/treatments#laser-hair-removal' },
+      { name: 'Hijama (Cupping Therapy)', href: '/treatments#hijama-cupping-therapy' },
+      { name: 'Body Skin Tightening', href: '/treatments#contact' },
+      { name: 'Stretch Mark Treatment', href: '/treatments#contact' },
+      { name: 'Cellulite Treatment', href: '/treatments#contact' },
+    ],
+  },
+  {
+    name: 'Surgical Treatments',
+    intro: 'Consultant-led surgical options, discussed in detail at consultation.',
+    items: [
+      { name: 'Surgical Consultation', href: '/treatments#contact' },
+      { name: 'Eyelid Surgery', href: '/treatments#contact' },
+      { name: 'Nose Reshaping', href: '/treatments#contact' },
+      { name: 'Liposuction', href: '/treatments#contact' },
+      { name: 'Scar Revision', href: '/treatments#contact' },
+    ],
+  },
+  {
+    name: 'Wellness & Health',
+    intro: 'Vitamins, hydration and traditional therapies to support how you feel.',
+    items: [
+      { name: 'IV Drips', href: '/treatments#iv-drips' },
+      { name: 'IM Vitamin Injections', href: '/treatments#vitamin-injections' },
+      { name: 'Vitamin B12 Injection', href: '/treatments#vitamin-injections' },
+      { name: 'Immunity Booster Drip', href: '/treatments#iv-drips' },
+      { name: 'Hydration Drip', href: '/treatments#iv-drips' },
+      { name: 'Hijama (Cupping Therapy)', href: '/treatments#hijama-cupping-therapy' },
+    ],
+  },
+  {
+    name: 'Skin & Lesion Removal',
+    intro: 'Careful removal of skin lesions, with a clear plan for healing.',
+    items: [
+      { name: 'Skin Tag Removal', href: '/treatments#contact' },
+      { name: 'Mole Removal', href: '/treatments#contact' },
+      { name: 'Wart Removal', href: '/treatments#contact' },
+      { name: 'Milia Removal', href: '/treatments#contact' },
+      { name: 'Sebaceous Hyperplasia Removal', href: '/treatments#contact' },
+      { name: 'Skin Rejuvenation', href: '/treatments#skin-rejuvenation' },
+    ],
+  },
+  {
+    name: 'Beauty Services',
+    intro: 'Considered, non-injectable treatments for everyday skin and grooming.',
+    items: [
+      { name: 'Dermaplaning', href: '/treatments#contact' },
+      { name: 'Chemical Peels', href: '/treatments#contact' },
+      { name: 'Signature Facial', href: '/treatments#contact' },
+      { name: 'Brow Lamination', href: '/treatments#contact' },
+      { name: 'Lash Lift & Tint', href: '/treatments#contact' },
+      { name: 'Skin Rejuvenation', href: '/treatments#skin-rejuvenation' },
+    ],
+  },
+]
+
+/** A condition we assess, shown as an anchored entry on /conditions. */
+export type Condition = {
+  slug: string
+  name: string
+  summary: string
+}
+
+export type ConditionCategory = {
+  slug: string
+  name: string
+  intro: string
+  conditions: Condition[]
+}
+
+export const conditionCategories: ConditionCategory[] = [
+  {
+    slug: 'face-conditions',
+    name: 'Face Conditions',
+    intro: 'From active breakouts to early signs of ageing, we assess the skin as a whole before recommending treatment.',
+    conditions: [
+      { slug: 'acne-breakouts', name: 'Acne & Breakouts', summary: 'Active breakouts, congestion and excess oil, assessed rather than treated with a single product.' },
+      { slug: 'acne-scarring', name: 'Acne Scarring', summary: 'Textural scarring and uneven skin left after acne, often addressed gradually over a course.' },
+      { slug: 'rosacea-redness', name: 'Rosacea & Redness', summary: 'Persistent redness, flushing and visible vessels, with treatment chosen to calm rather than aggravate.' },
+      { slug: 'pigmentation-melasma', name: 'Pigmentation & Melasma', summary: 'Sun-related patches, melasma and uneven tone, planned around your skin type and history.' },
+      { slug: 'fine-lines-wrinkles', name: 'Fine Lines & Wrinkles', summary: 'Expression lines and early signs of ageing, softened while keeping your features natural.' },
+      { slug: 'under-eye-concerns', name: 'Under-Eye Concerns', summary: 'Dark circles, puffiness and hollowing around an area that is delicate to treat.' },
+      { slug: 'enlarged-pores', name: 'Enlarged Pores', summary: 'Congestion and visible pores, most often across the T-zone, improved through skin quality.' },
+      { slug: 'dull-dehydrated-skin', name: 'Dull & Dehydrated Skin', summary: 'Tired-looking, dry or lacklustre skin that needs hydration and a considered routine.' },
+    ],
+  },
+  {
+    slug: 'hair-scalp-conditions',
+    name: 'Hair & Scalp Conditions',
+    intro: 'Hair loss has many causes. We look at the scalp, the pattern and your history before advising on treatment.',
+    conditions: [
+      { slug: 'hair-thinning', name: 'Hair Thinning', summary: 'Gradual thinning and reduced density, assessed alongside your general health and history.' },
+      { slug: 'male-pattern-hair-loss', name: 'Male Pattern Hair Loss', summary: 'Receding temples and thinning at the crown, managed with a realistic, staged plan.' },
+      { slug: 'female-pattern-hair-loss', name: 'Female Pattern Hair Loss', summary: 'Widening partings and diffuse thinning, reviewed with care for hormonal and other factors.' },
+      { slug: 'postpartum-hair-loss', name: 'Postpartum Hair Loss', summary: 'Temporary shedding after pregnancy, supported while the hair cycle settles.' },
+      { slug: 'patchy-hair-loss', name: 'Patchy Hair Loss', summary: 'Localised areas of loss that need a clear diagnosis before any treatment is agreed.' },
+      { slug: 'dry-irritated-scalp', name: 'Dry & Irritated Scalp', summary: 'Flaking, tightness and irritation that can affect both comfort and hair growth.' },
+      { slug: 'weak-brittle-hair', name: 'Weak & Brittle Hair', summary: 'Fragile hair that breaks easily, supported with scalp-led care rather than quick fixes.' },
+    ],
+  },
+  {
+    slug: 'body-conditions',
+    name: 'Body Conditions',
+    intro: 'Concerns on the body are assessed in context, with realistic expectations discussed before anything begins.',
+    conditions: [
+      { slug: 'stubborn-fat', name: 'Stubborn Fat', summary: 'Small, defined areas that remain despite a stable diet and exercise routine.' },
+      { slug: 'cellulite', name: 'Cellulite', summary: 'Dimpling and texture on the thighs, hips or bottom, improved rather than removed.' },
+      { slug: 'loose-crepey-skin', name: 'Loose & Crepey Skin', summary: 'Loss of firmness on the arms, abdomen or legs, treated according to skin quality.' },
+      { slug: 'stretch-marks', name: 'Stretch Marks', summary: 'Faded or newer stretch marks, with realistic expectations set at consultation.' },
+      { slug: 'unwanted-hair', name: 'Unwanted Hair', summary: 'Regrowth on the face or body, reduced gradually with a planned course of sessions.' },
+      { slug: 'body-acne', name: 'Body Acne', summary: 'Breakouts on the back, chest or shoulders, often helped by a simple, consistent routine.' },
+      { slug: 'excessive-sweating', name: 'Excessive Sweating', summary: 'Persistent sweating in localised areas, assessed for suitability before treatment.' },
+      { slug: 'uneven-body-tone', name: 'Uneven Body Tone', summary: 'Patchy tone or sun damage on the body, addressed with skin-led treatments.' },
+    ],
+  },
+  {
+    slug: 'intimate-sensitive-areas',
+    name: 'Intimate & Sensitive Areas',
+    intro: 'Discreet, respectful care for sensitive areas, always discussed privately and at your own pace.',
+    conditions: [
+      { slug: 'intimate-pigmentation', name: 'Intimate Skin Pigmentation', summary: 'Uneven tone in sensitive areas, treated cautiously after a private consultation.' },
+      { slug: 'unwanted-intimate-hair', name: 'Unwanted Intimate Hair', summary: 'Hair reduction for sensitive areas, using settings matched to your skin and hair type.' },
+      { slug: 'ingrown-hairs', name: 'Ingrown Hairs', summary: 'Recurring ingrown hairs and irritation, often linked to hair removal habits.' },
+      { slug: 'skin-tags', name: 'Skin Tags', summary: 'Small, benign skin growths in awkward areas, removed only after assessment.' },
+      { slug: 'intimate-sensitivity', name: 'Sensitivity & Irritation', summary: 'Persistent discomfort or irritation, reviewed carefully before any treatment is advised.' },
+      { slug: 'folliculitis', name: 'Folliculitis', summary: 'Inflamed hair follicles, managed by reducing irritation and choosing suitable hair removal.' },
+    ],
+  },
+]
+
+/** The same categories, formatted for the header mega menu. */
+export const conditionMenu: MegaMenuCategory[] = conditionCategories.map(({ name, intro, conditions }) => ({
+  name,
+  intro,
+  items: conditions.map(({ name: conditionName, slug }) => ({ name: conditionName, href: `/conditions#${slug}` })),
+}))
+
 export const menuGroups: MenuGroup[] = [
   {
     slug: 'iv-drips',

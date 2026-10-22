@@ -32,7 +32,7 @@ export const treatments: Treatment[] = [
     name: 'Anti-Wrinkle Treatments',
     short: 'Soften lines while preserving expression',
     detail: 'Small, carefully placed doses to ease the lines that form with movement, most often across the forehead, between the brows and around the eyes. The aim is a rested look with your expressions left intact.',
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=82',
+    image: '/anti-wrinkle.jpeg',
     featured: true,
   },
   {
@@ -40,7 +40,7 @@ export const treatments: Treatment[] = [
     name: 'Dermal Fillers',
     short: 'Restore balance and subtle definition',
     detail: 'Used to replace lost volume and bring quiet definition to the cheeks, lips, jawline or chin. We work conservatively and in stages, so the change reads as balance rather than as something added.',
-    image: 'https://images.unsplash.com/photo-1573461160327-b450ce3d8e7f?auto=format&fit=crop&w=800&q=82',
+    image: '/dermal-fillers.jpeg',
     featured: true,
   },
   {

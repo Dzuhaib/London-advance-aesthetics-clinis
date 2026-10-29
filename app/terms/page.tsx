@@ -18,10 +18,9 @@ export default function TermsPage() {
 }
 
 const sections = [
-  { title: '1. Validity Period', body: 'All treatment courses purchased from London Advance Aesthetic Clinic are valid for 12 months from the date of purchase.' },
-  { title: '2. Completion of Treatment Course', body: 'Clients are responsible for booking and completing all sessions included in their treatment course within the 12-month validity period.' },
-  { title: '3. No Treatment Exchange or Substitution', body: 'Once a treatment course has been purchased, it cannot be exchanged, substituted, or swapped for another treatment or service. The course remains valid only for the specific treatment for which it was originally purchased.' },
-  { title: '4. Expiry of Treatment Course', body: 'Any unused sessions remaining after the 12-month validity period will automatically expire and cannot be carried forward, exchanged, transferred, or refunded, unless otherwise agreed in writing by the clinic.' },
-  { title: '5. Client Responsibility', body: 'Clients are responsible for ensuring that appointments are scheduled sufficiently in advance to allow the full course to be completed within the 12-month validity period.' },
-  { title: '6. Exceptional Circumstances', body: 'Any request for an extension due to exceptional circumstances will be considered at the clinic\'s discretion and must be agreed in writing before the course expires.' }
+  { title: '1. Course Validity', body: 'All treatment courses must be completed within 12 months of the purchase date. Any unused treatments remaining after this period will automatically expire and cannot be carried forward.' },
+  { title: '2. No-Refund Policy', body: 'All treatment courses are non-refundable. No refunds will be issued for unused treatments or expired courses, subject to applicable consumer law.' },
+  { title: '3. Non-Transferable Treatments', body: 'Treatment courses are valid only for the specific treatment purchased. Courses cannot be transferred, exchanged, or switched to any other treatment or treatment course.' },
+  { title: '4. Flexible Payment Plans', body: 'Payment plan options are available for all treatment courses. Please speak to our team for further details about available payment options.' },
+  { title: 'Agreement', body: 'By purchasing a treatment course, clients agree to these terms and conditions.' }
 ]

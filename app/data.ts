@@ -70,7 +70,7 @@ export const treatments: Treatment[] = [
     name: 'Polynucleotides',
     short: 'Texture, elasticity and repair',
     detail: 'Improves texture and elasticity, supporting the skin to heal from within over several weeks. Often chosen for delicate areas such as beneath the eyes.',
-    image: '/plinest.jpeg',
+    image: '/plinest.png',
   },
   {
     slug: 'skin-boosters',

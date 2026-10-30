@@ -18,3 +18,4 @@ Thumbs.db
 # Local editor and tooling files
 .vscode/
 .idea/
+tsconfig.tsbuildinfo
